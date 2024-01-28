@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Add New Order</title>
+	<style>
+		/* Style for the form */
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		
+		/* Style for the form inputs */
+		input {
+			margin: 10px;
+			padding: 5px;
+			font-size: 16px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+			border: none;
+		}
+		
+		/* Style for the submit button */
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+		}
+		
+		/* Style for the submit button when hovered over */
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Add New Order</h1>
+	
+	<form action="add_order.php" method="post">
+	    <label for="order_id">Order ID:</label>
+		<input type="text" id="order_id" name="order_id" required>
+	    
+	    <label for="customer_id">Customer ID:</label>
+		<input type="text" id="customer_id" name="customer_id" required>
+		
+		<label for="employee_id">Employee ID:</label>
+		<input type="text" id="employee_id" name="employee_id" required>
+		
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date" required>
+		
+		<label for="total_price">Total Price:</label>
+		<input type="text" id="total_price" name="total_price">
+		
+		<label for="payment_method">Payment Method:</label>
+		<input type="text" id="payment_method" name="payment_method">
+		
+		<label for="status">Status:</label>
+		<input type="text" id="status" name="status" required>
+		
+		<input type="submit" value="Add Order">
+	</form>
+</body>
+</html>
